@@ -12,71 +12,157 @@ html{
     background-color: #1C1C1C;
 }
 
+a{
+    text-decoration: none;
+}
+
+/* NAVBAR */
 nav{
     display: flex;
     align-items: center;
-    justify-content: center;
-    height: 40px;
+    justify-content: space-between;
+    height: 50px;
+    width: 100%;
+    background-color: #0e0e0e;
+    padding: 0px 30px;
 }
 
 nav ul{
-    list-style: none;
     display: flex;
-    align-items: center;
+    list-style: none;
     gap: 45px;
-}
-
-nav ul a{
-    color: #fff;
-    text-decoration: none;
     font-size: 1.4rem;
     font-weight: 300;
 }
 
-#home {
+nav ul a{
+    color: #fff;
+}
+
+nav p{
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 200;
+}
+
+#home{
+    background: hsla(0, 0%, 40%, 1);
+    background: radial-gradient(circle, hsla(0, 0%, 40%, 1) 0%, hsla(0, 0%, 23%, 1) 50%, hsla(0, 0%, 11%, 1) 100%);
+    background: -moz-radial-gradient(circle, hsla(0, 0%, 40%, 1) 0%, hsla(0, 0%, 23%, 1) 50%, hsla(0, 0%, 11%, 1) 100%);
+    background: -webkit-radial-gradient(circle, hsla(0, 0%, 40%, 1) 0%, hsla(0, 0%, 23%, 1) 50%, hsla(0, 0%, 11%, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#676767", endColorstr="#3B3B3B", GradientType=1 );
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 255px;
     height: 100vh;
-    gap: 300px;
+    width: 100%;
+}
+
+#home .text-area{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    color: #fff;
 }
 
 #home .text-area h1{
-    font-size: 4.4rem;
-    color: #fff;
-    font-weight: 400;
+    font-size: 3.4rem;
+    font-weight: 700;
 }
 
 #home .text-area p{
-    font-size: 2.4rem;
-    color: #fff;
-    font-weight: 200;
-    margin-top: -20px;
-    margin-bottom: 50px;
-}
-
-#home .buttons ul{
-    list-style: none;
-    display: flex;
-    gap: 50px;
-}
-
-#home .buttons a{
-    text-decoration: none;
-    color: #fff;
-    background-color: #FF7900;
-    padding: 10px 50px;
-    border-radius: 24px;
-}
-
-#home .sm-area ul{
-    display: flex;
-    margin-top: 190px;
-    list-style: none;
-    gap: 20px;
     font-size: 2rem;
+    margin-top: -15px;
+    font-weight: 200;
 }
 
-#home .sm-area a{
+#home .text-area .btns{
+        margin-top: 25px;
+}
+
+#home .text-area .btns a{
+    background-color: #FF7900;
+    padding: 10px 40px;
+    border-radius: 55px;
+    color: #fff;
+    font-size: 1.3rem;
+    margin: 0px 5px;
+}
+
+#home .text-area .social-area{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 1.7rem;
+    margin-top: 100px;
+}
+
+#home .text-area .social-area a{
     color: #FF7900;
+}
+
+#home .home-img{
+    background-color: #FF7900;
+    border-radius: 50%;
+}
+
+#about{
+    background-color: #FF7900;
+    height: 100vh;
+    width: 100%;
+    border-radius: 20px 20px 0px 0px;
+}
+
+
+
+
+@media screen and (max-width: 905px) {
+    nav ul{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+   nav ul a{
+    font-size: 1rem;
+    justify-content: center;
+   }
+
+   nav p{
+    display: none;
+   }
+   
+   
+    #home{
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+   }
+
+   #home .text-area h1{
+    font-size: 2.3rem;
+   }
+
+   #home .text-area p{
+    font-size: 1.4rem;
+   }
+
+   #home .text-area .btns a{
+    background-color: #FF7900;
+    padding: 5px 20px;
+    border-radius: 55px;
+    color: #fff;
+    font-size: 0.9rem;
+    margin: 0px 5px;
+}
+
+    #home .social-area a{
+        font-size: 1.4rem;
+    }
+
+    #home .home-img, img{
+        height: 200px;
+        width: 200px;
+    }
 }
